@@ -27,12 +27,12 @@
 1. 修改 conf.py 文件，把你自己的 Consumer Key、Consumer Secret、Access_Token Key 和 Access_Token Secret 填进 token 中。
    若你没有 Consumer， 可访问 `饭否应用 <https://fanfou.com/apps>`_ 页面新建一个，如何获取 Access_Token 可查看 `fanfou-py <https://github.com/akgnah/fanfou-py>`_。
 
-2. Mr.Gretting 和 诗词君 都使用了两个账号，前者是因为早些时期饭否关注的人有上限，需要用额外的账号去关注人来获取消息；诗词君是因为配备了诗词娘来通知，当加入或退出的时候。
+2. Mr.Greeting 和 诗词君 都使用了两个账号，前者是因为早些时期饭否关注的人有上限，需要用额外的账号去关注人来获取消息；诗词君是因为配备了诗词娘来通知，当加入或退出的时候。
    你可以让 poems1 和 poems2 相同，whale1 和 whale2 相同，以此让他们都只使用一个账号。
 
 运行
 ----
-poems.py 是诗词君，whale.py 对应着 Mr.Gretting，下面是他们接受的参数和对应的功能：
+poems.py 是诗词君，whale.py 对应着 Mr.Greeting，下面是他们接受的参数和对应的功能：
 
 .. code-block:: bash
 
