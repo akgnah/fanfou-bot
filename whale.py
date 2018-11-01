@@ -135,8 +135,8 @@ def learn():
         y = item['statuses_count'] / float(b)
         K = 0.75 if item['protected'] else 1.0
         A = K if y > 20 else ((-y * y + 40 * y) / 400.0) * K
-        I = A * ((a + b) / 100.0) + 10 * math.sqrt(a) / math.log(b + 100.0, math.e)
-        return round(I)
+        N = A * ((a + b) / 100.0) + 10 * math.sqrt(a) / math.log(b + 100.0, math.e)
+        return round(N)
 
     for item in client1.direct_messages.inbox({'count': 60, 'mode': 'lite'}).json():
         text = htmlec(item['text'])
